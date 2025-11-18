@@ -1,0 +1,51 @@
+===========================================
+  VERIFICADOR DE FORÇA DE SENHA - GUIA RÁPIDO
+===========================================
+
+QUAL ARQUIVO ABRIR?
+-------------------
+✅ USE: verificador_senha_completo.asm
+❌ NÃO USE: main.asm (não funciona sozinho)
+
+INSTRUÇÕES NO MARS:
+-------------------
+1. Abra o MARS
+2. File → Open → verificador_senha_completo.asm
+3. Pressione F3 (ou clique em "Assemble")
+4. Pressione F5 (ou clique em "Run")
+5. Digite sua senha quando aparecer "Digite sua senha: "
+6. Pressione Enter
+
+EXEMPLO:
+--------
+Digite sua senha: MinhaSenh@123
+
+=== FORÇA DA SENHA ===
+
+Critérios verificados:
+----------------------------------------
+[X] Maiúscula
+[X] Minúscula
+[X] Caractere Especial
+[X] Mínimo 8 caracteres
+[X] Sem repetição excessiva
+----------------------------------------
+
+FORÇA: MUITO FORTE [█████████░] 81-100%
+
+POR QUE NÃO USAR main.asm?
+--------------------------
+O main.asm é um arquivo modular que depende de outros arquivos:
+- check_uppercase.asm
+- check_lowercase.asm
+- check_special.asm
+- check_length.asm
+- check_repetition.asm
+- display_strength.asm
+
+O MARS não inclui automaticamente esses arquivos, então você receberia
+erros como "Symbol not found".
+
+O arquivo verificador_senha_completo.asm contém TODOS os módulos
+em um único arquivo, por isso funciona perfeitamente.
+

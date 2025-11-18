@@ -58,20 +58,33 @@ Todas as sub-rotinas seguem o protocolo correto de gerenciamento de pilha:
 
 ## Como Compilar e Executar
 
+### ⚠️ IMPORTANTE: Qual arquivo usar?
+
+**Use o arquivo `verificador_senha_completo.asm`** - Este é o arquivo consolidado que contém todo o código necessário em um único arquivo.
+
+O arquivo `main.asm` é apenas para referência modular e requer outros arquivos que não estão incluídos automaticamente.
+
 ### Usando MARS (MIPS Assembler and Runtime Simulator)
 
 1. Abra o MARS
-2. Abra o arquivo `main.asm`
-3. Se o MARS suportar includes, configure os arquivos adicionais
-4. Alternativamente, copie o conteúdo de todos os módulos para um único arquivo
-5. Compile (Assemble)
-6. Execute (Run)
+2. **Abra o arquivo `verificador_senha_completo.asm`** (NÃO o main.asm)
+3. Compile (Assemble) - Pressione F3 ou clique em "Assemble"
+4. Execute (Run) - Pressione F5 ou clique em "Run"
+5. Digite sua senha quando solicitado
 
 ### Usando SPIM
 
-1. Combine todos os módulos em um único arquivo ou use includes
-2. Carregue o arquivo no SPIM
+1. Abra o SPIM
+2. **Carregue o arquivo `verificador_senha_completo.asm`**
 3. Execute o programa
+4. Digite sua senha quando solicitado
+
+### Nota sobre arquivos modulares
+
+Se você quiser usar a versão modular (`main.asm`), você precisaria:
+- Abrir todos os arquivos `.asm` no MARS simultaneamente
+- Ou usar um sistema de includes (que o MARS não suporta nativamente)
+- Por isso, recomendamos usar `verificador_senha_completo.asm`
 
 ## Exemplo de Uso
 

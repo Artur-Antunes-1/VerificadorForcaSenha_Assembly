@@ -19,19 +19,32 @@ O projeto está organizado em dois formatos:
 
 ## Como Usar
 
-### Opção 1: MARS (MIPS Assembler and Runtime Simulator)
+### ⚠️ IMPORTANTE: Use `verificador_senha_completo.asm`
 
-1. **Versão Consolidada (Recomendada)**:
-   - Abra o MARS
-   - File → Open → Selecione `verificador_senha_completo.asm`
-   - Assemble (F3)
-   - Run (F5)
+**SEMPRE use o arquivo `verificador_senha_completo.asm`** - Este é o arquivo completo e funcional.
 
-2. **Versão Modular**:
-   - Se o MARS suportar includes:
-     - Abra `main.asm`
-     - Configure os outros arquivos como includes
-   - Caso contrário, use a versão consolidada
+### Opção 1: MARS (MIPS Assembler and Runtime Simulator) - RECOMENDADO
+
+1. Abra o MARS
+2. File → Open → Selecione `verificador_senha_completo.asm`
+3. Assemble (F3 ou botão "Assemble")
+4. Run (F5 ou botão "Run")
+5. Digite sua senha quando solicitado no console
+
+### Opção 2: SPIM
+
+1. Abra o SPIM
+2. File → Load → Selecione `verificador_senha_completo.asm`
+3. Execute o programa
+4. Digite sua senha quando solicitado
+
+### Sobre os outros arquivos
+
+- `main.asm` - Apenas para referência (não funciona sozinho)
+- `check_*.asm` - Módulos individuais (não funcionam sozinhos)
+- `display_strength.asm` - Módulo individual (não funciona sozinho)
+
+**Todos esses arquivos estão consolidados em `verificador_senha_completo.asm`**
 
 ### Opção 2: SPIM
 
